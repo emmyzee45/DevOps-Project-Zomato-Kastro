@@ -88,6 +88,7 @@ $ docker ps (You can see SonarQube container)
 10. Installation of Plugins in Jenkins
 Install below plugins:
 <Follow the process as explained in the video>
+Eclipse Temurin Installer, SonarQube Scanner, NodeJS, OWASP Dependency-check, docker, docker commons, DOcker Pipline
 
 11. SonarQube configuration in Jenkins
 <Follow the process as explained in the video>
