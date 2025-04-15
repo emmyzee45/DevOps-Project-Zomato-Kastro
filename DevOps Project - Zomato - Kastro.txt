@@ -95,6 +95,7 @@ Eclipse Temurin Installer, SonarQube Scanner, NodeJS, OWASP Dependency-check, do
 
 11.1. Tools Configuration in Jenkins
 <Follow the process as explained in the video>
+jdk17, sonar-scanner, node23, DP-Check,docker
 
 11.2. Configuration of SonarQube Token in Jenkins
 <Follow the process as explained in the video>
