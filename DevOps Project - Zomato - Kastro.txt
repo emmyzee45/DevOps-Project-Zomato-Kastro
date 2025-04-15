@@ -88,24 +88,47 @@ $ docker ps (You can see SonarQube container)
 10. Installation of Plugins in Jenkins
 Install below plugins:
 <Follow the process as explained in the video>
+Manage Jenkins > Plugins
 Eclipse Temurin Installer, SonarQube Scanner, NodeJS, OWASP Dependency-check, docker, docker commons, DOcker Pipline, Docker API, docker-build-step, Pipeline Stage View, Prometheus metrics, Email Extension Template
 
 11. SonarQube configuration in Jenkins
 <Follow the process as explained in the video>
+SonarQube: Admininstration > Security > User > (global)
+Jenkins: Manage Jenkins > Credentials > add credentials > secret text
 
 11.1. Tools Configuration in Jenkins
 <Follow the process as explained in the video>
+Manage Jenkins > tools
 jdk17, sonar-scanner, node23, DP-Check,docker
 
 11.2. Configuration of SonarQube Token in Jenkins
 <Follow the process as explained in the video>
+Manage Jenkins > Security > sonarqube server
+Name: sonar-server,
+Server URL: http://3.86.64.129:9000
 
 Lets create another credentials for DockerHub. This is being done because, as soon as the docker image is created, it should get pushed to dockerhub. 
 <Follow the process as explained in the video>
+Manage Jenkins > Credentials > docker username and password
 
 11.3 Configuration of Email notification in Jenkins
 As soon as the build happens, i need to get an email notification to do that we have to configure our email.
 <Follow the process as explained in the video>
+Manage Jenkins > Credentials > Username and Password > email and app password in gmail as username and password
+Manage Jenkins > System > Extended E-mail Notification
+SMTP-Server: smtp.gmail.com
+SMTP-Port: 465
+Credentials: select your email
+Mark use ssl and Oauth2
+	scroll down
+E-mail Notification
+SMTP-Server: smtp.gmail.com
+SMTP-Authentication: email and app password for username and password
+Mark Use SSL
+Port: 465
+Reply-To Address: emmyaondohemba@gmail.com
+test configuration
+Configure default triggers
 
 
 12. System Configuration in Jenkins
@@ -113,6 +136,9 @@ As soon as the build happens, i need to get an email notification to do that we 
 
 13. Create webhook in SonarQube
 <Follow the process as explained in the video>
+Configuration > webhooks > create
+Name: jenkins
+webhook: http://3.86.64.129:8080/sonarqube-webhook/
 
 14. Create Pipeline Job
 Before pasting the pipeline script, do the following changes in the script
