@@ -492,6 +492,9 @@ Lets add the data source;
 
 <Follow the process as explained in the video>
 
+https://grafana.com/grafana/dashboards/1860-node-exporter-full/
+https://grafana.com/grafana/dashboards/9964-jenkins-performance-and-health-overview/
+
 Click on Dashboards in the left pane, you can see both the dashboards you have just added.
 
 ---------------------------------------------
